@@ -19,15 +19,8 @@ class ViewController: UIViewController {
     }
 
     // Function
-    fileprivate func updateUi() {
-        if ligthOn{
-            ///lightButton.setTitle("Off", for: .normal)
-            view.backgroundColor = .white
-        }
-        else{
-            ///lightButton.setTitle("On", for: .normal)
-            view.backgroundColor = .black
-        }
+    func updateUi() {
+        view.backgroundColor = ligthOn ? .white : .black
     }
     
     // Button Action

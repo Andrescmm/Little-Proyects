@@ -6,7 +6,7 @@ from random import randint
 import secrets
 import string
 import subprocess
-import clipboard
+
 
 def full_password(length):
     
@@ -26,8 +26,7 @@ def copy2clip(txt):
     return subprocess.check_call(cmd, shell=True)
 
 data = full_password(20)
-print (data)
-
 copy2clip(data)
 
 nonSS_password(20)
+

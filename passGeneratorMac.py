@@ -2,7 +2,6 @@
 
 #Import modules 
 import random
-from random import randint
 import secrets
 import string
 import subprocess
@@ -25,9 +24,9 @@ def copy2clip(txt):
     cmd='echo '+txt.strip()+'|pbcopy'
     return subprocess.check_call(cmd, shell=True)
 
-data = full_password(20)
+data = full_password(30)
 print (data)
 
-copy2clip(data)
+#copy2clip(data)
 
 nonSS_password(20)
